@@ -13,53 +13,63 @@
         <link href="style.css" rel="stylesheet" />
     </head>
     <body>
-        <div class="container" style="max-width: 1024px">
-            <head>
-                <h1>Usman</h1>
-                <p>Bangkalan</p>
-            </head>
+        <div class="container">
+            <div class="row container-h1">
+                <h1>Curriculum Vitae</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="me.jpg" class="img-thumbnail w-50" alt="usman" />
+                </div>
+                <div class="col-md-6">
+                    <article>
+                        <head>
+                            <h2>Profil</h2>
+                        </head>
+                        <p>
+                            Usman, salah satu putra terbaik Bangkalan. Awalnya
+                            dia mendalami pemrograman Visual Basic (VBA Access),
+                            lalu ke PHP, dan lanjut ke JavaScript.
+                        </p>
+                        <p>
+                            Mendalami IT pada usia yang terlambat menurut
+                            kebanyakan orang: 32 tahun, tapi itu tidak
+                            mematahkan semangatnya. Hal ini dibutikan ketika dia
+                            berkesempatan meraih beasiswa dari Dicoding. Dia
+                            tampil sebagai salah satu lulusan terbaik: Bintang
+                            5, untuk <strong>semua kelas</strong> pada jalur Web
+                            Front End (pemula hingga expert).
+                        </p>
+                    </article>
+                </div>
+            </div>
 
             <main>
-                <article>
-                    <head>
-                        <h2>Profil</h2>
-                    </head>
-                    <p>
-                        Usman, salah satu putra terbaik Bangkalan. Awalnya dia
-                        mendalami pemrograman Visual Basic (VBA Access), lalu ke
-                        PHP, dan lanjut ke JavaScript.
-                    </p>
-                    <p>
-                        Mendalami IT pada usia yang terlambat menurut kebanyakan
-                        orang: 32 tahun, tapi itu tidak mematahkan semangatnya.
-                        Hal ini dibutikan ketika dia berkesempatan meraih
-                        beasiswa dari Dicoding. Dia tampil sebagai salah satu
-                        lulusan terbaik: Bintang 5, untuk semua kelas pada jalur
-                        Web Front End (pemula hingga expert).
-                    </p>
-                </article>
-                <article>
-                    <head>
-                        <h2>Pendidikan</h2>
-                    </head>
-                    <p>
-                        Dia terlahir dari kalangan santri, karenanya pendidikan
-                        yang ditempuh setelah tamat SD adalah pesantren. Setelah
-                        tamat dari pesantren dia mendalami IT secara otodidak,
-                        hingga akhirnya berkesempatan mendapatkan beasiswa dari
-                        Dicoding.
-                    </p>
-                </article>
+                <div class="row">
+                    <article class="col-md-6">
+                        <head>
+                            <h2>Pendidikan</h2>
+                        </head>
+                        <p>
+                            Dia terlahir dari kalangan santri, karenanya
+                            pendidikan yang ditempuh setelah tamat SD adalah
+                            pesantren. Setelah tamat dari pesantren dia
+                            mendalami IT secara otodidak, hingga akhirnya
+                            berkesempatan mendapatkan beasiswa dari Dicoding.
+                        </p>
+                    </article>
+                </div>
                 <section>
                     <head>
                         <h2>Pengalaman</h2>
                     </head>
                     <p>Berikut di antara Aplikasi yang pernah dibuat:</p>
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="card">
+                        <!-- idsantri access -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm">
                                 <div
-                                    id="carouselExampleInterval"
+                                    id="carousel-access"
                                     class="carousel slide"
                                     data-bs-ride="carousel"
                                 >
@@ -97,7 +107,7 @@
                                     <button
                                         class="carousel-control-prev"
                                         type="button"
-                                        data-bs-target="#carouselExampleInterval"
+                                        data-bs-target="#carousel-access"
                                         data-bs-slide="prev"
                                     >
                                         <span
@@ -111,7 +121,7 @@
                                     <button
                                         class="carousel-control-next"
                                         type="button"
-                                        data-bs-target="#carouselExampleInterval"
+                                        data-bs-target="#carousel-access"
                                         data-bs-slide="next"
                                     >
                                         <span
@@ -123,8 +133,10 @@
                                         >
                                     </button>
                                 </div>
-                                <div class="card-body text-dark">
-                                    <h3>Aplikasi Madrasah dan Pesantren</h3>
+                                <div class="card-body">
+                                    <h3>
+                                        Aplikasi Madrasah dan Pesantren (Access)
+                                    </h3>
                                     <p class="card-text">
                                         Aplikasi dengan kerangka Microsoft
                                         Access yang dibuat untuk membantu sistem
@@ -141,59 +153,315 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <li>Aplikasi Silsilah</li>
-                            <p>
-                                Aplikasi silsilah atau family tree yang dibuat
-                                dengan kerangka PHP (CI4) sebagai backend dan
-                                Vuejs 3 sebagai frontend.
-                            </p>
-                            <p>
-                                Lihat sc frontend
-                                <a
-                                    href="https://github.com/idsantri/bani-asror-app"
-                                    target="_blank"
-                                    >di sini</a
-                                >.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <li>Aplikasi Toko</li>
-                            <p>
-                                Aplikasi toko meubel (IPOS) yang dibuat dengan
-                                kerangka PHP (CI4) sebagai backend dan Vuejs 3
-                                sebagai frontend.
-                            </p>
 
-                            <p>
-                                Lihat sc frontend
-                                <a
-                                    href="https://github.com/idsantri/awet-makmur-app"
-                                    target="_blank"
-                                    >di sini</a
-                                >.
-                            </p>
+                        <!-- idsantri pwa -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="carousel-idsantri-pwa"
+                                    class="carousel slide"
+                                    data-bs-ride="carousel"
+                                >
+                                    <div
+                                        class="carousel-inner h-100 overflow-hidden"
+                                    >
+                                        <div
+                                            class="carousel-item active"
+                                            data-bs-interval="10000"
+                                        >
+                                            <img
+                                                src="idsantri-a.png"
+                                                class="card-img-top"
+                                                alt="idsantri1"
+                                            />
+                                        </div>
+                                        <div
+                                            class="carousel-item"
+                                            data-bs-interval="2000"
+                                        >
+                                            <img
+                                                src="idsantri-b.png"
+                                                class="card-img-top"
+                                                alt="idsantri2"
+                                            />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img
+                                                src="idsantri-c.png"
+                                                class="card-img-top"
+                                                alt="idsantri3"
+                                            />
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="carousel-control-prev"
+                                        type="button"
+                                        data-bs-target="#carousel-idsantri-pwa"
+                                        data-bs-slide="prev"
+                                    >
+                                        <span
+                                            class="carousel-control-prev-icon"
+                                            aria-hidden="true"
+                                        ></span>
+                                        <span class="visually-hidden"
+                                            >Previous</span
+                                        >
+                                    </button>
+                                    <button
+                                        class="carousel-control-next"
+                                        type="button"
+                                        data-bs-target="#carousel-idsantri-pwa"
+                                        data-bs-slide="next"
+                                    >
+                                        <span
+                                            class="carousel-control-next-icon"
+                                            aria-hidden="true"
+                                        ></span>
+                                        <span class="visually-hidden"
+                                            >Next</span
+                                        >
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h3>
+                                        Aplikasi Madrasah dan Pesantren (PWA)
+                                    </h3>
+                                    <p class="card-text">
+                                        Aplikasi PWA untuk membantu sistem
+                                        pendidikan madrasah dan pesantren.
+                                        Dibangun dengan kerangka PHP (Laravel
+                                        10) sebagai backend dan Vuejs 3 sebagai
+                                        frontend.
+                                    </p>
+                                    <p>
+                                        Lihat sc frontend
+                                        <a
+                                            href="https://github.com/idsantri/idsantri-app"
+                                            target="_blank"
+                                            >di sini</a
+                                        >.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- silsilah -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="carousel-bani-asror"
+                                    class="carousel slide"
+                                    data-bs-ride="carousel"
+                                >
+                                    <div
+                                        class="carousel-inner h-100 overflow-hidden"
+                                    >
+                                        <div
+                                            class="carousel-item active"
+                                            data-bs-interval="10000"
+                                        >
+                                            <img
+                                                src="bani1.png"
+                                                class="card-img-top"
+                                                alt="idsantri1"
+                                            />
+                                        </div>
+                                        <div
+                                            class="carousel-item"
+                                            data-bs-interval="2000"
+                                        >
+                                            <img
+                                                src="bani2.png"
+                                                class="card-img-top"
+                                                alt="idsantri2"
+                                            />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img
+                                                src="bani3.png"
+                                                class="card-img-top"
+                                                alt="idsantri3"
+                                            />
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="carousel-control-prev"
+                                        type="button"
+                                        data-bs-target="#carousel-bani-asror"
+                                        data-bs-slide="prev"
+                                    >
+                                        <span
+                                            class="carousel-control-prev-icon"
+                                            aria-hidden="true"
+                                        ></span>
+                                        <span class="visually-hidden"
+                                            >Previous</span
+                                        >
+                                    </button>
+                                    <button
+                                        class="carousel-control-next"
+                                        type="button"
+                                        data-bs-target="#carousel-bani-asror"
+                                        data-bs-slide="next"
+                                    >
+                                        <span
+                                            class="carousel-control-next-icon"
+                                            aria-hidden="true"
+                                        ></span>
+                                        <span class="visually-hidden"
+                                            >Next</span
+                                        >
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Aplikasi Silsilah (PWA)</h3>
+                                    <p class="card-text">
+                                        Aplikasi silsilah atau family tree yang
+                                        dibuat dengan kerangka PHP (CI4) sebagai
+                                        backend dan Vuejs 3 sebagai frontend.
+                                    </p>
+                                    <p>
+                                        Lihat sc frontend
+                                        <a
+                                            href="https://github.com/idsantri/bani-asror-app"
+                                            target="_blank"
+                                            >di sini</a
+                                        >.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- awet makmur -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card shadow-sm">
+                                <div
+                                    id="carousel-am"
+                                    class="carousel slide"
+                                    data-bs-ride="carousel"
+                                >
+                                    <div
+                                        class="carousel-inner h-100 overflow-hidden"
+                                    >
+                                        <div
+                                            class="carousel-item active"
+                                            data-bs-interval="10000"
+                                        >
+                                            <img
+                                                src="awet1.png"
+                                                class="card-img-top"
+                                                alt="idsantri1"
+                                            />
+                                        </div>
+                                        <div
+                                            class="carousel-item"
+                                            data-bs-interval="2000"
+                                        >
+                                            <img
+                                                src="awet2.png"
+                                                class="card-img-top"
+                                                alt="idsantri2"
+                                            />
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img
+                                                src="awet3.png"
+                                                class="card-img-top"
+                                                alt="idsantri3"
+                                            />
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="carousel-control-prev"
+                                        type="button"
+                                        data-bs-target="#carousel-am"
+                                        data-bs-slide="prev"
+                                    >
+                                        <span
+                                            class="carousel-control-prev-icon"
+                                            aria-hidden="true"
+                                        ></span>
+                                        <span class="visually-hidden"
+                                            >Previous</span
+                                        >
+                                    </button>
+                                    <button
+                                        class="carousel-control-next"
+                                        type="button"
+                                        data-bs-target="#carousel-am"
+                                        data-bs-slide="next"
+                                    >
+                                        <span
+                                            class="carousel-control-next-icon"
+                                            aria-hidden="true"
+                                        ></span>
+                                        <span class="visually-hidden"
+                                            >Next</span
+                                        >
+                                    </button>
+                                </div>
+                                <div class="card-body">
+                                    <h3>Aplikasi Toko (PWA)</h3>
+                                    <p class="card-text">
+                                        Aplikasi toko meubel (IPOS) yang dibuat
+                                        dengan kerangka PHP (CI4) sebagai
+                                        backend dan Vuejs 3 sebagai frontend.
+                                        Aplikasi ini juga dilengkapi dengan
+                                        fitur hitung zakat.
+                                    </p>
+                                    <p>
+                                        Lihat sc frontend
+                                        <a
+                                            href="https://github.com/idsantri/awet-makmur-app"
+                                            target="_blank"
+                                            >di sini</a
+                                        >.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
             </main>
-            <aside>
-                <section>
+            <aside class="row">
+                <section class="col-md-4 p-3">
                     <head>
                         <h2>Alamat</h2>
                         <p>Tambegan Timur Tambegan Arosbaya Bangkalan</p>
                     </head>
                 </section>
-                <section>
+                <section class="col-md-4 p-3">
                     <head>
                         <h2>Kontak</h2>
                         <p>idsantri.mail@gmail.com</p>
                         <p>0857.6567.5657</p>
                     </head>
                 </section>
+                <section class="col-md-4 p-3">
+                    <head>
+                        <h2>Link</h2>
+                        <p>
+                            Github:
+                            <a
+                                href="https://github.com/idsantri"
+                                target="_blank"
+                                >idsantri</a
+                            >
+                        </p>
+                        <p>
+                            LinkedIn:
+                            <a
+                                href="https://github.com/idsantri"
+                                target="_blank"
+                                >idsantri</a
+                            >
+                        </p>
+                        <p>Dicoding: idsantri.mail@gmail.com</p>
+                    </head>
+                </section>
             </aside>
-            <footer>
-                <p>&copy;oets</p>
+            <footer class="row">
+                <p class="text-center p-1 m-0">&copy;oets 2023</p>
             </footer>
         </div>
         <script

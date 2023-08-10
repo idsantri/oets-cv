@@ -1,4 +1,62 @@
 body {
-    /* background-color: rgb(40, 53, 53);
-    color: rgb(221, 247, 247); */
+    background-image: url('pattern.jpg');
+    background-repeat: repeat;
+    background-size: 300px;
+}
+.container {
+    border-left: solid 1px rgba(97, 180, 180, 0.5);
+    border-right: solid 1px rgb(97, 180, 180, 0.5);
+
+    color: rgb(1, 50, 50);
+    background-color: rgba(190, 255, 255, 0.4);
+    max-width: 1024px;
+}
+.container > * {
+    color: rgb(1, 60, 60);
+}
+.card {
+    border: 0;
+    background-color: rgba(127, 192, 192, 0.4);
+}
+
+.container-h1 {
+    background-color: rgba(0, 128, 128, 0.5);
+    color: whitesmoke;
+    margin-bottom: 16px;
+}
+h1 {
+    font-size: 2rem;
+    padding: 10px;
+    text-shadow: 1px 1px 4px rgb(50, 66, 66);
+}
+h2 {
+    font-size: 1.8rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+p {
+    text-align: justify;
+}
+
+aside {
+    background-color: rgba(39, 122, 122, 0.5);
+}
+aside > * {
+    color: whitesmoke;
+}
+aside > section > h2 {
+    font-size: 1.2rem;
+}
+aside > section > p {
+    text-align: left;
+}
+aside > * > p {
+    margin: 0;
+}
+footer {
+    background-color: rgba(32, 94, 94, 0.5);
+}
+footer > p {
+    color: whitesmoke;
 }
