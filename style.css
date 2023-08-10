@@ -1,4 +1,41 @@
 body {
-    /* background-color: rgb(40, 53, 53);
-    color: rgb(221, 247, 247); */
+    background-color: rgba(0, 128, 128, 0.1);
+    color: rgb(1, 50, 50);
+}
+.container {
+    background-color: rgba(0, 128, 128, 0.03);
+    max-width: 1024px;
+}
+.container > * {
+    color: rgb(1, 60, 60);
+}
+.card {
+    border: 0;
+    background-color: rgba(0, 128, 128, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+p {
+    text-align: justify;
+}
+
+aside {
+    background-color: rgba(0, 128, 128, 0.7);
+}
+aside > * {
+    color: aliceblue;
+}
+aside > section > h2 {
+    font-size: 1.2rem;
+}
+aside > * > p {
+    margin: 0;
 }
