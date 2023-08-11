@@ -15,7 +15,7 @@ body {
     color: rgb(1, 60, 60);
 }
 .card {
-    border: 0;
+    border-color: rgb(92, 168, 168);
     background-color: rgba(127, 192, 192, 0.4);
 }
 
