@@ -57,9 +57,9 @@ aside > section > p {
 aside > * > p {
     margin: 0;
 }
-footer {
+body > .container > footer {
     background-color: rgba(32, 94, 94, 0.5);
 }
-footer > p {
+body > .container > footer > p {
     color: whitesmoke;
 }
